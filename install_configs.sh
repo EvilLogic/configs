@@ -8,7 +8,7 @@ sudo apt install git -y
 # install zsh
 sudo apt install zsh -y
 cp .zshrc ~/.zshrc
-sudo chsh -s /bin/zsh
+chsh -s `which zsh`
 
 # install tmux
 sudo apt install tmux -y
