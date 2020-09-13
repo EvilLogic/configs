@@ -14,3 +14,4 @@ chsh -s `which zsh`
 sudo apt install tmux -y
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp .tmux.conf ~/.tmux.conf
+~/.tmux/plugins/tpm/scripts/install_plugins.sh
