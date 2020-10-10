@@ -7,7 +7,7 @@ TRAPALRM() {
 	    zle reset-prompt
     }
 
-alias ls="ls -la --color=auto"
+alias ll="ls -la --color=auto"
 
 ##############################################################################
 ## History Configuration
