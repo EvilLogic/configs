@@ -7,7 +7,7 @@ TRAPALRM() {
 	    zle reset-prompt
     }
 
-alias ll="ls -la --color=auto"
+alias ls="ls -la --color=auto"
 
 ##############################################################################
 ## History Configuration
@@ -19,3 +19,9 @@ SAVEHIST=5000               #Number of history entries to save to disk
 setopt    appendhistory     #Append history to the history file (no overwriting)
 setopt    sharehistory      #Share history across terminals
 setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
+
+# Start tmux on new session
+if [ -z "$TMUX_PANE" ]
+then
+	tmux
+fi
