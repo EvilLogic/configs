@@ -20,6 +20,10 @@ setopt    appendhistory     #Append history to the history file (no overwriting)
 setopt    sharehistory      #Share history across terminals
 setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
 
+# Enable ctrl+arrow keys
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
 # Start tmux on new session
 if [ -z "$TMUX_PANE" ]
 then
